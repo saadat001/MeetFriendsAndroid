@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/ic_background"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_couple"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_width="0dp"
+        android:src="@drawable/ic_couple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:fontFamily="@font/metropolis_bold"
+        android:id="@+id/tv_main_text"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_width="wrap_content"
+        android:text="@string/be_together_anytime_anywhere"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_couple" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:background="@drawable/rounded_btn"
+        android:fontFamily="@font/metropolis_bold"
+        android:id="@+id/tv_login"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:text="@string/log_in"
+        android:textAlignment="center"
+        android:textColor="@color/white_color"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_create_account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:background="@drawable/rounded_corner_white"
+        android:fontFamily="@font/metropolis_bold"
+        android:id="@+id/tv_create_account"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:text="@string/create_account"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

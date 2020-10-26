@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/drawable_white_top_radius"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:text="@string/saveTo"
+                android:textColor="@color/black_color"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/view_color" />
+
+        <LinearLayout
+            android:id="@+id/llAddCollection"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/drawable_circular_black"
+                android:padding="10dp"
+                android:src="@drawable/ic_plus" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:text="New Collection"
+                android:textColor="@color/black_color"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCollection"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        <TextView
+            android:id="@+id/tvSave"
+            android:layout_width="200dp"
+            android:layout_gravity="center"
+            android:layout_height="40dp"
+            android:background="@drawable/drawable_background_button"
+            android:gravity="center"
+            android:text="@string/save"
+            android:textColor="@color/white_color"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlOpenCollectionDialog"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/drawable_background_translate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/drawable_background_post">
+
+            <EditText
+                android:id="@+id/edtCollection"
+                style="@style/commentsEditTextStyle"
+                android:layout_centerVertical="true"
+                android:hint="Add Collection"
+                android:textColor="@color/black_color"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+            <TextView
+                android:id="@+id/tvAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtCollection"
+                android:layout_marginTop="10dp"
+                android:text="Add"
+                android:textColor="@color/white_color"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:background="@drawable/drawable_background_button_square"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/loaderVisibility"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:indicatorColor="@color/black_color"
+        app:indicatorName="BallTrianglePathIndicator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group1">
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_profile"
+            android:title="@string/profile" />
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group2">
+        <item
+            android:id="@+id/logOut"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/logOut" />
+    </group>
+
+    <!--<group android:checkableBehavior="single"
+        android:id="@+id/group2">
+        <item
+            android:id="@+id/privacyPolicy"
+            android:icon="@drawable/ic_policy"
+            android:title="@string/privacyPolicy" />
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group3">
+        <item
+            android:id="@+id/termsCondition"
+            android:icon="@drawable/ic_term_conditions"
+            android:title="@string/termsCondition" />
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group4">
+        <item
+            android:id="@+id/logOut"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/logOut" />
+    </group>-->
+
+</menu>

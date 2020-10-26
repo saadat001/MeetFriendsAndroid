@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_couple"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginTop="@dimen/_150sdp"
+        android:src="@drawable/ic_couple" />
+
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_main_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_marginBottom="@dimen/_25sdp"
+        android:text="@string/be_together_anytime_anywhere"
+        android:layout_gravity="center"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        android:fontFamily="@font/metropolis_bold" />
+
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_50sdp"
+        android:layout_marginRight="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:background="@drawable/rounded_corner_login"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:text="@string/log_in"
+        android:gravity="center"
+        android:fontFamily="@font/metropolis_bold"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_create_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_50sdp"
+        android:layout_marginRight="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/dimen_25"
+        android:background="@drawable/rounded_corner_white"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:text="@string/create_account"
+        android:gravity="center"
+        android:fontFamily="@font/metropolis_bold"
+        android:textColor="@color/text_color"
+        android:textSize="14sp" />
+
+
+</LinearLayout>

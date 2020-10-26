@@ -1,0 +1,108 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">true</item>
+        <item name="android:statusBarColor">@color/black_color</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up_dialog</item>
+        <item name="android:windowExitAnimation">@anim/slide_down_dialog</item>
+    </style>
+    <style name="styleNoDataTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/dimen_16</item>
+        <item name="android:fontFamily">@font/metropolis_bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <style name="animationName" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_uptoast</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <style name="CommentEditTextTheme" parent="AppTheme">
+        <item name="android:colorControlActivated">@color/colorPrimaryText</item>
+        <item name="android:colorControlNormal">@color/colorPrimaryText</item>
+        <item name="android:colorControlHighlight">@color/colorPrimaryText</item>
+    </style>
+
+    <style name="commentsEditTextStyle" parent="Base.Widget.AppCompat.EditText">
+        <item name="android:paddingStart">@dimen/dimen_16</item>
+        <item name="android:paddingEnd">@dimen/dimen_16</item>
+        <item name="android:paddingTop">@dimen/dimen_8</item>
+        <item name="android:paddingBottom">@dimen/dimen_6</item>
+        <item name="android:textColorHint">@color/colorDisabledText</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Caption</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/drawable_round_grey_border</item>
+        <item name="android:theme">@style/CommentEditTextTheme</item>
+    </style>
+    <style name="MyEditTextTheme">
+        <item name="colorControlNormal">@color/light_grey</item>
+        <item name="android:textColor">@color/white_color</item>
+        <item name="android:textSize">14sp</item>
+        <item name="colorControlActivated">@color/light_grey</item>
+        <item name="colorControlHighlight">@color/light_grey</item>
+        <item name="android:textCursorDrawable">@drawable/drawable_cursor_silver</item>
+    </style>
+
+    <style name="EditTextLabel" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">@dimen/dimen_10</item>
+        <item name="android:theme">@style/MyEditTextTheme</item>
+        <item name="android:textColorHint">@color/light_grey</item>
+        <item name="android:textColor">@color/white_color</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_20</item>
+        <item name="android:layout_marginStart">@dimen/dimen_14</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_14</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="android:background">@drawable/drawable_edit_text</item>
+    </style>
+
+    <style name="EditTextLabelWithoutBorder" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">@dimen/dimen_10</item>
+        <item name="android:theme">@style/MyEditTextTheme</item>
+        <item name="android:textColorHint">@color/light_grey</item>
+        <item name="android:textColor">@color/black_color</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_20</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_14</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="android:background">@drawable/drawable_edit_text_without_border</item>
+    </style>
+
+    <style name="EditTextComment" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">@dimen/dimen_10</item>
+        <item name="android:theme">@style/MyEditTextTheme</item>
+        <item name="android:textColorHint">@color/light_grey</item>
+        <item name="android:textColor">@color/black_color</item>m>
+        <item name="android:layout_marginEnd">@dimen/dimen_14</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="android:background">@drawable/drawable_edit_text_without_border</item>
+    </style>
+
+    <style name="menu_text_style" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Menu">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white_color</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+</resources>

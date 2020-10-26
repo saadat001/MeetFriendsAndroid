@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.infideap.drawerbehavior.AdvanceDrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/drawable_gradient_drawer"
+        tools:openDrawer="start">
+
+        <!--<androidx.drawerlayout.widget.DrawerLayout
+            android:id="@+id/drawer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:openDrawer="end">-->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_68sdp"
+                android:background="@color/blue_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/ivSlider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dimen_20"
+                    android:background="@drawable/ic_bar" />
+
+                <ImageView
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_24sdp"
+                    android:background="@drawable/ic_logo_meet_white" />
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:background="@drawable/ic_search" />
+
+            </RelativeLayout>
+
+            <com.websoftquality.meetfriends.Utils.NonSwipeableViewpager
+                android:id="@+id/vpHome"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/bottom_view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+            <!--<fragment
+                android:id="@+id/menu_nav_host_fragment"
+                android:name="androidx.navigation.fragment.NavHostFragment"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                app:defaultNavHost="true"
+                app:layout_constraintBottom_toTopOf="@+id/bottom_nav_view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout"/>-->
+
+            <LinearLayout
+                android:id="@+id/bottom_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_48sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:background="@color/white_color"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:id="@+id/rlHome"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:id="@+id/ivHome"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/home_selector"/>
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/tvHome"
+                        android:layout_below="@+id/ivHome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlMessage"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:id="@+id/ivMessage"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/chat_menu_selector"/>
+                    <TextView
+                        android:layout_below="@+id/ivMessage"
+                        android:id="@+id/tvMessage"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/messages"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlVideo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:id="@+id/ivVideo"
+                        android:layout_width="@dimen/_26sdp"
+                        android:layout_height="@dimen/_14sdp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_14sdp"
+                        android:background="@drawable/video_selector"/>
+                    <TextView
+                        android:layout_below="@+id/ivVideo"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/videos"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlLiveVideo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:id="@+id/ivLiveVideo"
+                        android:layout_width="@dimen/_26sdp"
+                        android:layout_height="@dimen/_14sdp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:background="@drawable/live_selector"/>
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/tvLiveVideo"
+                        android:layout_below="@+id/ivLiveVideo"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/live"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rlChallenge"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:id="@+id/ivChallenge"
+                        android:layout_width="@dimen/_26sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:background="@drawable/challenge_selector"/>
+                    <TextView
+                        android:layout_below="@+id/ivChallenge"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/tvChallenge"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/my_challenge"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--<com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_nav_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="false"
+                android:background="@color/white_color"
+                app:itemTextColor="@color/bottom_navigation_color"
+                app:labelVisibilityMode="labeled"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:menu="@menu/menu_navigation" />-->
+
+            <FrameLayout
+                android:id="@+id/flHomeContainer"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            android:background="@drawable/drawable_gradient_drawer"
+            app:headerLayout="@layout/nav_header_layout"
+            app:itemTextAppearance="@style/menu_text_style"
+            app:menu="@menu/menu_layout" />
+        <!--</androidx.drawerlayout.widget.DrawerLayout>-->
+    </com.infideap.drawerbehavior.AdvanceDrawerLayout>
+
+    <FrameLayout
+        android:id="@+id/flMainContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/drawer_layout"
+        app:layout_constraintEnd_toEndOf="@+id/drawer_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

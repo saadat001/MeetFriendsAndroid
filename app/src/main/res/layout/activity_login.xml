@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.LoginActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_login_bg_with_couple"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/ic_back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_50sdp">
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/metropolis_medium"
+                        android:text="@string/log_in"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black_color"
+                        android:textSize="@dimen/_25sdp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="@dimen/_25sdp"
+                        android:layout_marginRight="@dimen/_25sdp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:fontFamily="@font/metropolis_medium"
+                            android:text="@string/email_phone"
+                            android:textColor="@color/dark_grey"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/img_email"
+                                android:layout_width="15dp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                app:srcCompat="@drawable/ic_email"/>
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_20sdp"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:layout_marginRight="@dimen/_20sdp"
+                                android:background="@null"
+                                android:fontFamily="@font/metropolis_regular"
+                                android:hint="@string/your_email_or_phone"
+                                android:inputType="textEmailAddress"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textColor="@color/text_color"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+                    <View
+                        android:id="@+id/view_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_25sdp"
+                        android:layout_marginRight="@dimen/_25sdp"
+                        android:background="@color/dark_grey" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="@dimen/_25sdp"
+                        android:layout_marginRight="@dimen/_25sdp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_passwrd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:fontFamily="@font/metropolis_medium"
+                            android:text="@string/password"
+                            android:textColor="@color/dark_grey"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/img_password"
+                                android:layout_width="15dp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                app:srcCompat="@drawable/ic_password"/>
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et_paswrd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_20sdp"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:layout_marginRight="@dimen/_20sdp"
+                                android:background="@null"
+                                android:fontFamily="@font/metropolis_regular"
+                                android:hint="@string/your_password"
+                                android:inputType="textPassword"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:drawableRight="@drawable/ic_show_password"
+                                android:textColor="@color/text_color"
+                                android:textSize="12sp" />
+
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+                    <View
+                        android:id="@+id/view_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="@dimen/_25sdp"
+                        android:layout_marginRight="@dimen/_25sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@color/dark_grey" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_25sdp"
+                        android:layout_marginRight="@dimen/_25sdp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:layout_gravity="center_vertical">
+                            <CheckBox
+                                android:id="@+id/check_remember"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_rember_me"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/metropolis_regular"
+                                android:gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:text="@string/remember_me"
+                                android:textColor="@color/dark_grey"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_forgot_password"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:layout_gravity="center_vertical">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_forgot_password"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/metropolis_regular"
+                                android:gravity="end"
+                                android:text="@string/forgot_password"
+                                android:textAlignment="gravity"
+                                android:textColor="@color/dark_grey"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_login_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_25sdp"
+                        android:layout_marginRight="@dimen/_25sdp"
+                        android:layout_marginTop="@dimen/_40sdp"
+                        android:layout_marginBottom="@dimen/_25sdp"
+                        android:background="@drawable/rounded_corner_login"
+                        android:fontFamily="@font/metropolis_bold"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:text="@string/log_in"
+                        android:gravity="center"
+                        android:textColor="@color/white_color"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <View
+                            android:id="@+id/view_or1"
+                            android:layout_width="@dimen/_150sdp"
+                            android:layout_height="1px"
+                            android:layout_marginLeft="@dimen/_25sdp"
+                            android:layout_marginRight="@dimen/_25sdp"
+                            android:background="@color/dark_grey" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/metropolis_medium"
+                            android:text="@string/or"
+                            android:textColor="@color/dark_grey"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:id="@+id/view_or2"
+                            android:layout_width="@dimen/_150sdp"
+                            android:layout_height="1px"
+                            android:layout_marginLeft="@dimen/_25sdp"
+                            android:layout_marginRight="@dimen/_25sdp"
+                            android:background="@color/dark_grey" />
+
+                    </LinearLayout>
+
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_login_with_google"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginLeft="@dimen/_25sdp"
+                        android:layout_marginRight="@dimen/_25sdp"
+                        android:layout_marginBottom="@dimen/_25sdp"
+                        android:background="@drawable/rounded_red"
+                        android:fontFamily="@font/metropolis_bold"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:text="@string/login_with_google"
+                        android:gravity="center"
+                        android:textColor="@color/white_color"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_dont_hav_acc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/metropolis_regular"
+                            android:text="@string/don_t_have_any_account"
+                            android:textColor="@color/dark_grey"
+                            android:textSize="14sp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_signUp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/metropolis_regular"
+                            android:text="@string/sign_up"
+                            android:textColor="@color/btn_color"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

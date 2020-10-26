@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#dd86e7</color>
+
+    <color name="colorPrimaryDark">#dd86e7</color>
+
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="color">#6E6C80</color>
+
+    <color name="color1">#6E6C80</color>
+
+    <color name="btn_color">#dd86e7</color>
+
+    <color name="white_color">#ffffff</color>
+
+    <color name="white_with_opacity">#40ffffff</color>
+
+    <color name="text_color">#6e6d7f</color>
+
+    <color name="black_color">#000000</color>
+
+    <color name="fifty_black_color">#59000000</color>
+
+    <color name="red_color">#de5c5c</color>
+
+    <color name="dark_grey">#444444</color>
+
+    <color name="light_grey">#a4a4a4</color>
+
+    <color name="view_color">#b8b8b8</color>
+
+    <color name="background_view_color">#E6E2E2</color>
+
+    <color name="blue_color">#673dbb</color>
+
+    <color name="Selected_blue_color">#66673DBB</color>
+
+    <color name="colorPurple">#C30186</color>
+
+    <color name="colorMedium">#d42261</color>
+
+    <color name="colorOrange">#fa6910</color>
+
+    <color name="unselectedButton">#3F3E4C</color>
+
+    <!-- text Colors-->
+
+
+    <color name="colorPrimaryText">#2f2f2f</color>
+
+    <color name="colorSecondaryText">#8b8b8b</color>
+
+    <color name="colorDisabledText">#b1b1b1</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <!--<color name="lightgray">#d3d3d3</color>-->
+    <color name="lightgray">#ebebeb</color>
+    <color name="green">#4da83e</color>
+    <color name="picolor">#00c5b2</color>
+    <color name="barsetcolor">#6C3483</color>
+    <color name="blackbackground">#303336</color>
+    <color name="grayback">#727374</color>
+    <color name="border_color">#3f3f3f</color>
+    <color name="graytext">#757575</color>
+    <color name="gray_backboxes">#d3d3d3</color>
+    <color name="Activity">#558971</color>
+    <color name="Announcement">#8f7d4f</color>
+    <color name="holiday">#e6b345</color>
+    <color name="Exam">#36596c</color>
+    <color name="adminbackground">#e4e4e4</color>
+    <color name="redbtn">#f11e03</color>
+    <color name="homework_daycolor">#c7be2e</color>
+    <color name="homework_viewbackground">#e88371</color>
+    <color name="circular_viewbackground">#ce6844</color>
+    <color name="markscard">#e76f51</color>
+    <color name="percentagecard">#f4a261</color>
+    <color name="gradecard">#e9c46a</color>
+    <color name="routecolor">#0d98ba</color>
+    <color name="messangerbuadge">#187541</color>
+    <color name="homeworkbudge">#3e4dac</color>
+    <color name="calenderbudge">#ff6565</color>
+    <color name="timetablebudge">#00cdff</color>
+    <color name="maxMarks">#FBCACA</color>
+    <color name="avgMarks">#C6FAE0</color>
+    <color name="minMarks">#D8B7FA</color>
+    <color name="studentMarks">#008000</color>
+    <color name="present">#32CD32</color>
+    <color name="absent">#DC143C</color>
+    <color name="leave">#FF4500</color>
+    <color name="notmarked">#808080</color>
+
+
+</resources>

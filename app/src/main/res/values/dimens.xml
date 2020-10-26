@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_1">1dp</dimen>
+    <dimen name="dimen_2">2dp</dimen>
+    <dimen name="dimen_4">4dp</dimen>
+    <dimen name="dimen_6">6dp</dimen>
+    <dimen name="dimen_8">8dp</dimen>
+    <dimen name="dimen_12">12dp</dimen>
+    <dimen name="dimen_15">15dp</dimen>
+    <dimen name="dimen_16">16dp</dimen>
+    <dimen name="dimen_18">18dp</dimen>
+
+    <dimen name="dimen_20">20dp</dimen>
+    <dimen name="dimen_24">24dp</dimen>
+    <dimen name="dimen_25">25dp</dimen>
+    <dimen name="dimen_32">32dp</dimen>
+    <dimen name="dimen_40">40dp</dimen>
+    <dimen name="dimen_48">48dp</dimen>
+    <dimen name="dimen_54">54dp</dimen>
+    <dimen name="dimen_60">60dp</dimen>
+    <dimen name="dimen_80">80dp</dimen>
+    <dimen name="dimen_100">100dp</dimen>
+    <dimen name="dimen_120">120dp</dimen>
+    <dimen name="dimen_130">130dp</dimen>
+    <dimen name="dimen_160">160dp</dimen>
+    <dimen name="dimen_180">180dp</dimen>
+
+    <dimen name="dimen_200">200dp</dimen>
+    <dimen name="dimen_140">140dp</dimen>
+    <dimen name="dimen_36">36dp</dimen>
+    <dimen name="dimen_0">0dp</dimen>
+    <dimen name="dimen_240">240dp</dimen>
+    <dimen name="dimen_300">300dp</dimen>
+    <dimen name="dimen_400">400dp</dimen>
+    <dimen name="dimen_3">3dp</dimen>
+    <dimen name="dimen_44">44dp</dimen>
+    <dimen name="dimen_68">68dp</dimen>
+
+    <!-- camera dimension-->
+    <dimen name="editor_size">26dp</dimen>
+    <dimen name="grid_expected_size">120dp</dimen>
+
+    <dimen name="btnWidth">200dp</dimen>
+
+    <!-- VIDEO TRIMMER-->
+    <dimen name="progress_video_line_height">2dp</dimen>
+    <dimen name="frames_video_height">30dip</dimen>
+
+    <item name="three_items" format="float" type="dimen">1.5</item>
+    <item name="five_items" format="float" type="dimen">1.25</item>
+    <item name="seven_items" format="float" type="dimen">1.16</item>
+
+
+    <dimen name="media_grid_size">48dp</dimen>
+    <dimen name="media_grid_spacing">4dp</dimen>
+
+    <dimen name="album_item_height">72dp</dimen>
+    <dimen name="dimen_1_px">1px</dimen>
+    <dimen name="dimen_10">10dp</dimen>
+
+    <dimen name="text_size_small">12.0sp</dimen>
+    <dimen name="text_size_medium">14.0sp</dimen>
+    <dimen name="dimen_30">30dp</dimen>
+    <dimen name="dimen_14">14dp</dimen>
+
+    <!-- Quickblox -->
+    <dimen name="unread_counter_text_size">13sp</dimen>
+    <dimen name="chat_date_text_size">13sp</dimen>
+    <dimen name="chat_date_header_top_margin">30dp</dimen>
+    <dimen name="chat_author_text_size">16sp</dimen>
+    <dimen name="chat_attachment_preview_size">80dp</dimen>
+    <dimen name="chat_message_body_text_size">16sp</dimen>
+    <dimen name="chat_message_info_text_size">13sp</dimen>
+    <dimen name="chat_message_content_margin">4dp</dimen>
+    <dimen name="chat_message_username_margin">@dimen/chat_message_content_margin</dimen>
+    <dimen name="chat_message_attachment_username_margin">12dp</dimen>
+    <dimen name="chat_message_attachment_size">160dp</dimen>
+    <dimen name="list_item_side_margin">16dp</dimen>
+    <dimen name="dimen_26">26dp</dimen>
+    <dimen name="dimen_22">22dp</dimen>
+    <dimen name="dimen_50">50dp</dimen>
+
+</resources>
