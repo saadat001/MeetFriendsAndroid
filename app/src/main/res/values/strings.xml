@@ -130,4 +130,7 @@
     <string name="profile_fragment">Profile Image</string>
     <string name="cover_fragment">Cover Image</string>
     <string name="your_api_key">AIzaSyACxN9HzDq2zbdVp93Lq1KZm8LV4M2cykk</string>
+    <string name="earning_account">Earning Account</string>
+    <string name="settings">Settings</string>
+    <string name="gift_gallery">Gift Gallery</string>
 </resources>

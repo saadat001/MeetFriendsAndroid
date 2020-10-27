@@ -69,7 +69,7 @@ public class ResetPasswordActivity extends AppCompatActivity implements View.OnC
                 {
 
                     Intent intent=new Intent(ResetPasswordActivity.this,LoginActivity.class);
-                    intent.putExtra("otp",jsonObject.getString("otp"));
+//                    intent.putExtra("otp",jsonObject.getString("otp"));
                     startActivity(intent);
                     finish();
 

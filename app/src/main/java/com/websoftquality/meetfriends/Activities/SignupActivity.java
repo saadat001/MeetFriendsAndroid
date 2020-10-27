@@ -224,7 +224,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
                         public void run() {
 
                             try {
-                                Intent intent=new Intent(SignupActivity.this, OtpActivity.class);
+                                Intent intent=new Intent(SignupActivity.this, LoginActivity.class);
                                 intent.putExtra("otp",jsonObject.getString("otp"));
                                 intent.putExtra("user_name",et_phone.getText().toString());
                                 intent.putExtra("first_name",et_first.getText().toString());
