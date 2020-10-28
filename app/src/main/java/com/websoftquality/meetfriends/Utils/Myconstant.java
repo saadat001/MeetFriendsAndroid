@@ -8,10 +8,12 @@ public class Myconstant
     public static String UsernameApi="usernamevalidation";
     public static String ResestPasswordApi="forgotpassword";
     public static String ReplacePasswordApi="replacepassword";
+    public static String FriendSuggestionApi="friend_suggestion";
     public static String SharedPrefrence="shared";
     public static String UserId="userid";
     public static String FirstName="fname";
     public static String LastName="lname";
+    public static String AccessToken="access_token";
 
 
     public static int apitime_out=10000;

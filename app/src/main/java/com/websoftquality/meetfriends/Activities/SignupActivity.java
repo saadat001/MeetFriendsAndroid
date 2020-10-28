@@ -55,9 +55,9 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
     MessageToast messageToast;
     Loading loading;
     Apierror_handle apierror_handle;
+    JSONObject jsonObject;
     String code;
     DatePickerDialog picker;
-    JSONObject jsonObject;
     RadioButton rb_male,rb_female,rb_other;
     String dob;
     CheckBox check_agree;

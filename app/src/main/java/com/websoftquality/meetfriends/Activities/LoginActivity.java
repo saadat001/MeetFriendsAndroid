@@ -121,6 +121,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                                 editor.putString(Myconstant.UserId,jsonObject.getJSONObject("user_details").getString("user_id"));
                                 editor.putString(Myconstant.FirstName,jsonObject.getJSONObject("user_details").getString("first_name"));
                                 editor.putString(Myconstant.LastName,jsonObject.getJSONObject("user_details").getString("last_name"));
+                                editor.putString(Myconstant.AccessToken,jsonObject.getString("access_token"));
                                 editor.apply();
                                 startActivity(intent);
                             } catch (JSONException e) {
